@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="10dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
     android:layout_marginTop="10dp"
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/linear_layout"
-    tools:context="com.mycompany.tempapplication.CompanyInfoActivity">'
+    android:background="@drawable/linear_layout">
 
     <com.example.kingwen.frescofragment.Views.CircleImageView
         android:id="@+id/activity_logo"
         android:src="@drawable/timg"
         android:layout_width="80dp"
         android:layout_height="80dp"
-
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
         android:layout_gravity="center_vertical"
 
         />
@@ -31,21 +32,23 @@
             android:id="@+id/activityname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25dp"
+            android:layout_marginTop="17dp"
+            android:textSize="20dp"
             android:text="活动名称"/>
 
         <TextView
             android:id="@+id/companyname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
             android:text="活动公司"/>
         <TextView
 
             android:id="@+id/companytime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:text="活动时间"/>
     </LinearLayout>
 </LinearLayout>

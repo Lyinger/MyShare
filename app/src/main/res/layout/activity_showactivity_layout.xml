@@ -9,27 +9,28 @@
 
     <com.example.kingwen.frescofragment.Views.CircleImageView
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:background="@drawable/timg"
-        android:layout_width="150dp"
-        android:layout_height="150dp" />
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
 
 
 
     <LinearLayout
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal">
         <TextView
-            android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="活动名称"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold"/>
         <TextView
-            android:textSize="20dp"
-            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
             android:id="@+id/dt_activity_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -39,16 +40,18 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="公司名称"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold"/>
         <TextView
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:id="@+id/dt_company_name"
+            android:layout_marginLeft="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -56,16 +59,18 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="活动时间"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold"/>
         <TextView
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:id="@+id/dt_activity_time"
+            android:layout_marginLeft="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -73,24 +78,26 @@
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="活动简介"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold"/>
         <TextView
             android:id="@+id/dt_activity_introduction"
+            android:layout_marginLeft="25dp"
             android:layout_width="wrap_content"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:singleLine="false"
             android:layout_height="100dp" />
     </LinearLayout>
 
     <Button
-        android:layout_marginBottom="30dp"
         android:id="@+id/dt_attend_button"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
