@@ -70,7 +70,7 @@ public class MyInformationFragment extends Fragment {
         View  view=inflater.inflate(R.layout.fragment_myinfromation_layout, container, false);
 
 
-        iv_changeInfo= (ImageButton)view.findViewById(R.id.setting_myinfor);
+        iv_changeInfo= (ImageButton)view.findViewById(R.id.setting_myinfor_change);
         rc_myinfo= (RecyclerView) view.findViewById(R.id.recycleview_myfor);
         //配置适配器
         manager=new LinearLayoutManager(getActivity());
@@ -182,8 +182,8 @@ public class MyInformationFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-               /* Intent intent = new Intent(getContext(), ChangeMyInforActivity.class);
-                startActivity(intent);*/
+                Intent intent = new Intent(getContext(), ChangeMyInforActivity.class);
+                startActivity(intent);
 
             }
         });

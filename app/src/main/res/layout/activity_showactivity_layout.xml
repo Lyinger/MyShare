@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:layout_marginTop="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colortheme"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/return_setting_showacitivity_title"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_return"
+            android:background="@color/colortransparent"
+            />
+
+        <TextView
+            android:id="@+id/center_publish_showacitivity_title"
+            android:text="活动报名"
+            android:textColor="@color/colorwhite"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
 
     <com.example.kingwen.frescofragment.Views.CircleImageView
         android:layout_gravity="center"
@@ -102,4 +136,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="报名参加"/>
+        </LinearLayout>
 </LinearLayout>

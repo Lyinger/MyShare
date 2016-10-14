@@ -7,6 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+
 import com.example.kingwen.frescofragment.Adapters.MyInforAdapter;
 import com.example.kingwen.frescofragment.Beans.Booker;
 import com.example.kingwen.frescofragment.MyApplication.MyApplication;
@@ -22,7 +24,7 @@ public class MyInforActivity extends AppCompatActivity {
 
 
 
-    private ImageButton iv_return;
+    private ImageView iv_return;
 
     private ImageButton iv_changeInfo;
 
@@ -53,7 +55,7 @@ public class MyInforActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        iv_return= (ImageButton) findViewById(R.id.return_myinfo);
+        iv_return= (ImageView) findViewById(R.id.return_myinfo);
         iv_changeInfo= (ImageButton) findViewById(R.id.setting_myinfor);
         rc_myinfo= (RecyclerView) findViewById(R.id.recycleview_myfor);
     }

@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ public class ShowCompanyActivity extends AppCompatActivity {
     private TextView tv_companyname;
 
     private Button btn_confirm;
+    private ImageButton btn_return;
 
     private Context mContext;
 
@@ -73,6 +75,12 @@ public class ShowCompanyActivity extends AppCompatActivity {
             }
         });
 
+        btn_return.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                ShowCompanyActivity.this.finish();
+            }
+        });
 
     }
 
@@ -84,7 +92,7 @@ public class ShowCompanyActivity extends AppCompatActivity {
         tv_companyname= (TextView) findViewById(R.id.dt_company_name);
 
         btn_confirm= (Button) findViewById(R.id.dt_attend_button);
-
+        btn_return=(ImageButton)findViewById(R.id.return_setting_showacitivity_title);
 
 
     }

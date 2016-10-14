@@ -4,6 +4,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colortheme">
+
+
+        <TextView
+            android:id="@+id/center_pubbookdetail_title"
+            android:text="书籍详情"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorwhite"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageButton
+            android:id="@+id/return_setting_pubbookdetail_title"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_return"
+            android:background="@color/colortransparent"
+            />
+
+    </RelativeLayout>
+
     <!--书籍详情的介绍-->
     
     <RelativeLayout

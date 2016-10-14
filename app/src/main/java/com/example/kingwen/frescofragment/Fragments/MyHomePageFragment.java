@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -61,7 +62,7 @@ public class MyHomePageFragment extends Fragment implements View.OnClickListener
 
     //界面中各个组件
     private TextView et_search;
-    private Button  btn_search;
+    private ImageButton  btn_search;
 
     //不同图书分类
     private  Button  btn_novel;
@@ -100,6 +101,20 @@ public class MyHomePageFragment extends Fragment implements View.OnClickListener
         publishadapter=new BookAdapter(context);
 
         initDatas();
+      /*  publishdata.add(Books.book_android);
+        publishdata.add(Books.book_bio_deng);
+        publishdata.add(Books.book_journal_guojiadili);
+        publishdata.add(Books.book_journal_lonely);
+        publishdata.add(Books.book_bio_jobs);
+        publishdata.add(Books.book_journal_reader);
+        publishdata.add(Books.book_life_bodylove);
+        publishdata.add(Books.book_other_buddha);
+        publishdata.add(Books.book_other_lonelyandhonor);
+        publishdata.add(Books.book_life_bodylove);
+        publishdata.add(Books.book_story_heyisheng);
+        publishdata.add(Books.book_story_wanmei);
+        publishdata.add(Books.book_bio_fangao);*/
+
 
 
     }
@@ -223,7 +238,7 @@ public class MyHomePageFragment extends Fragment implements View.OnClickListener
     private void initViews() {
 
         et_search= (TextView) view.findViewById(R.id.et_search_homefragment);
-        btn_search= (Button) view.findViewById(R.id.btn_search_homefragment);
+        btn_search= (ImageButton) view.findViewById(R.id.btn_search_homefragment);
         btn_novel= (Button) view.findViewById(R.id.btn_novel);
         btn_biography=(Button) view.findViewById(R.id.btn_biography);
         btn_life=(Button) view.findViewById(R.id.btn_life);
@@ -288,8 +303,8 @@ public class MyHomePageFragment extends Fragment implements View.OnClickListener
 
             //搜索界面
             case R.id.btn_search_homefragment:
-                //Intent intent=new Intent(context,SearchActivity.class);
-                //startActivity(intent);
+//                Intent intent=new Intent(context,SearchActivity.class);
+//                startActivity(intent);
                 break;
             //小说
             case R.id.btn_novel:

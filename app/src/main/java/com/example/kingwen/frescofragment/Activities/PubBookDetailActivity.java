@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -47,7 +48,7 @@ public class PubBookDetailActivity extends AppCompatActivity {
 
     private Button btn_followPerson;
     private Button btn_followBook;
-
+    private ImageButton btn_return;
 
     //上下文对象
     private Context mContext;
@@ -210,6 +211,12 @@ public class PubBookDetailActivity extends AppCompatActivity {
             }
         });
 
+        btn_return.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PubBookDetailActivity.this.finish();
+            }
+        });
     }
 
     private void initDatas() {
@@ -252,6 +259,7 @@ public class PubBookDetailActivity extends AppCompatActivity {
 
          btn_followPerson= (Button) findViewById(R.id.btn_followPerson_detail);
          btn_followBook= (Button) findViewById(R.id.btn_followBook_detail);
+         btn_return=(ImageButton)findViewById(R.id.return_setting_pubbookdetail_title);
 
     }
 }

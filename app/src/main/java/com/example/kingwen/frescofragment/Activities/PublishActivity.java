@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -75,6 +76,7 @@ public class PublishActivity extends AppCompatActivity implements CompoundButton
 
     Button btn_publish;
 
+    ImageButton btn_return;
 
     RequestQueue mQueue;
 
@@ -150,6 +152,12 @@ public class PublishActivity extends AppCompatActivity implements CompoundButton
          checkboxWaysale.setOnCheckedChangeListener(this);
 
 
+         btn_return.setOnClickListener(new View.OnClickListener(){
+             @Override
+             public void onClick(View v) {
+                 PublishActivity.this.finish();
+             }
+         });
 
 
         /**
@@ -292,6 +300,7 @@ public class PublishActivity extends AppCompatActivity implements CompoundButton
         checkboxWayborrow= (CheckBox) findViewById(R.id.checkbox_wayborrow);
         etBookersay= (EditText) findViewById(R.id.et_bookersay);
         btn_publish= (Button) findViewById(R.id.btn_publish);
+        btn_return=(ImageButton)findViewById(R.id.return_setting_publish_title);
 
     }
 

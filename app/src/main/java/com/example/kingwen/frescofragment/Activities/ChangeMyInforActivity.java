@@ -113,7 +113,7 @@ public class ChangeMyInforActivity extends AppCompatActivity {
 
         iv_touxiang= (ImageView) findViewById(R.id.touxiang_changeinfo);
 
-        ib_return= (ImageView) findViewById(R.id.return_setting);
+        ib_return= (ImageView) findViewById(R.id.return_setting_changeinfor_title);
     }
 
 }

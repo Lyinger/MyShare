@@ -74,7 +74,8 @@
         <TextView
             android:id="@+id/tv_summary_item"
             android:text="     不舍得读完的、暖心的、真实的江湖故事汇"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
             android:layout_below="@id/tv_author_item"
             android:layout_alignLeft="@+id/tv_bookname_item"
             android:layout_width="match_parent"

@@ -7,11 +7,14 @@
 
     <TextView
         android:id="@+id/tv_assortment_searchactivity"
+        android:background="@color/colortheme"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
         android:text="分类"
+        android:textColor="@color/colorwhite"
         android:gravity="center"
-        android:textSize="30dp"
+        android:textSize="20dp"
         />
 
     <android.support.v7.widget.RecyclerView
