@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_simple1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/linear_layout"
+        >
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_book1_simple"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_book"/>
+
+        <TextView
+            android:id="@+id/tv_bookname1_simple"
+            android:text="书名"
+            android:textColor="@color/colorinfont"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_simple2"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/linear_layout"
+
+        >
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_book2_simple"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_book"/>
+
+        <TextView
+            android:id="@+id/tv_bookname2_simple"
+            android:text="书名"
+            android:textColor="@color/colorinfont"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:id="@+id/ll_simple3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/linear_layout"
+
+        >
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/iv_book3_simple"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_book"/>
+
+        <TextView
+            android:id="@+id/tv_bookname3_simple"
+            android:text="书名"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/colorinfont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

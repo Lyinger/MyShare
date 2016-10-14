@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:text="我要发布"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_publish"
+        android:text="上传照片"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_book"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:text="书名"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:singleLine="false"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:text="作者"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:id="@+id/et_author"
+            android:singleLine="false"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:text="简介"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:id="@+id/et_summary"
+            android:layout_weight="5"
+            android:singleLine="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:text="书籍分类"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox_novel"
+                android:text="小说"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:layout_toRightOf="@+id/checkbox_novel"
+                android:id="@+id/checkbox_biography"
+                android:text="传记"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:layout_toRightOf="@+id/checkbox_biography"
+                android:id="@+id/checkbox_life"
+                android:text="生活"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox_professional"
+                android:text="专业"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:layout_toRightOf="@+id/checkbox_novel"
+                android:id="@+id/checkbox_journal"
+                android:text="杂志"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:layout_toRightOf="@+id/checkbox_biography"
+                android:id="@+id/checkbox_other"
+                android:text="其他"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--1送 2 换  3卖  4借-->
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:text="处理方式"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox_waydeliver"
+                android:text="倾情赠送"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:layout_toRightOf="@+id/checkbox_novel"
+                android:id="@+id/checkbox_wayexchange"
+                android:text="以书易书"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkbox_waysale"
+                android:text="钱货两清"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <CheckBox
+                android:layout_toRightOf="@+id/checkbox_novel"
+                android:id="@+id/checkbox_wayborrow"
+                android:text="好借好还"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:gravity="center"
+            android:text="我想说"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <EditText
+            android:singleLine="false"
+            android:id="@+id/et_bookersay"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="确认发布"
+        android:id="@+id/btn_publish"
+        android:background="@color/maincolor"
+        android:textColor="@color/colorwhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

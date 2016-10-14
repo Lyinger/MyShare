@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_choice_inforitem"
+        android:textSize="15dp"
+        android:text="姓名"
+        android:textColor="@color/colorinfochice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tv_font_inforitem"
+        android:textSize="15dp"
+        android:text="这是测试数据"
+        android:textColor="@color/colorinfont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="@color/colorinfont"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></LinearLayout>
+
+</LinearLayout>

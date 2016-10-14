@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/img_search"
+            android:background="@color/colortransparent"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/et_search_homefragment"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:hint="书名/作者/发布者"
+            android:background="@drawable/round_rectangle"
+
+            />
+
+        <Button
+            android:background="@color/colortransparent"
+            android:id="@+id/btn_search_homefragment"
+            android:text="搜索"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <Button
+            android:id="@+id/btn_novel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_rectangle"
+            android:text="小说"
+
+            android:textColor="@color/colorblack"
+            android:textSize="15dp"
+            />
+
+            <Button
+                android:id="@+id/btn_biography"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rectangle"
+                android:text="传记"
+
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                />
+
+            <Button
+                android:id="@+id/btn_life"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rectangle"
+                android:text="生活"
+
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/ll"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/btn_professional"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rectangle"
+                android:text="专业书"
+
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                />
+
+            <Button
+                android:id="@+id/btn_journal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rectangle"
+                android:text="期刊杂志"
+
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                />
+
+            <Button
+                android:id="@+id/btn_other"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_rectangle"
+                android:text="其它"
+
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--下拉刷新+recycleview-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+
+
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

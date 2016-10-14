@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colortransparent">#00000000</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colororange">#FF7F00</color>
+    <color name="colorblack">#000000</color>
+
+
+    <color name="colortheme">#17324d</color>
+
+    <!--Myinfo界面-->
+    <color name="colorinfochice">#d47227</color>
+    <color name="colorinfont">#a6afb6</color>
+
+      <!--图书借阅界面background-->
+    <color name="background">#ebeff2</color>
+
+    <color name="maincolor">#2665a3</color>
+
+
+
+</resources>

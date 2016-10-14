@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorwhite">
+        <!--android:background="@drawable/linear_layout"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="等待订阅"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            <ImageButton
+                android:id="@+id/detail_subs_mybook"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/turn_to_arrow"/>
+            
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/rv_mysub_mybook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@color/colorwhite">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorblack"
+                android:text="已经出借"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+
+                android:id="@+id/detail_lent_mybook"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/turn_to_arrow"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/rv_myled_mybook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

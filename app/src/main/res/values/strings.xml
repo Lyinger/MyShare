@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">交享阅</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--每条账单的收入或者支出-->
+    <string name="mycurrency_lend">借出</string>
+    <string name="mycurrency_borrow">借入</string>
+    <string name="mycurrency_plus">借入</string>
+    <string name="mycurrency_minus">借入</string>
+
+</resources>

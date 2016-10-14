@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/iv_moneyin_billitem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/img_getmoneys"/>
+
+        <TextView
+            android:id="@+id/tv_plusminus_billitem"
+            android:text="+"
+            android:textSize="35dp"
+            android:layout_toRightOf="@+id/iv_moneyin_billitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_billnum_billitem"
+            android:text="10"
+            android:textSize="35dp"
+            android:layout_toRightOf="@+id/tv_plusminus_billitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/zuokuokao"
+            android:text="《"
+            android:textSize="20dp"
+            android:layout_below="@+id/tv_billnum_billitem"
+            android:layout_toRightOf="@+id/tv_inout_billitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_book_billitem"
+            android:text="我们仨"
+            android:textSize="20dp"
+            android:layout_below="@+id/tv_billnum_billitem"
+            android:layout_toRightOf="@+id/zuokuokao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/youkuohao"
+            android:text="》"
+            android:textSize="20dp"
+            android:layout_below="@+id/tv_billnum_billitem"
+            android:layout_toRightOf="@+id/tv_book_billitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_hengxian_billitem"
+            android:text="--"
+            android:textSize="20dp"
+            android:layout_below="@+id/tv_billnum_billitem"
+            android:layout_toRightOf="@+id/youkuohao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_relativeperson_billitem"
+            android:text="阳光"
+            android:textSize="20dp"
+            android:layout_below="@+id/tv_plusminus_billitem"
+            android:layout_toRightOf="@+id/tv_hengxian_billitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_inout_billitem"
+            android:text="借出"
+            android:textSize="20dp"
+            android:layout_below="@+id/tv_plusminus_billitem"
+            android:layout_toRightOf="@+id/iv_moneyin_billitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_relativedata_billitem"
+            android:text="2016.6.7"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/tv_billnum_billitem"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_above="@+id/tv_relativeperson_billitem"
+            android:layout_marginBottom="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/colorblack"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="2dp">
+
+    </LinearLayout>
+
+</LinearLayout>

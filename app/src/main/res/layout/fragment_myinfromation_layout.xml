@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colortheme"
+        >
+
+
+            <ImageButton
+
+                android:layout_marginTop="10dp"
+                android:layout_gravity="end"
+                android:id="@+id/setting_myinfor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/setting"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                />
+
+
+
+        <com.example.kingwen.frescofragment.Views.CircleImageView
+            android:id="@+id/touxiang_information"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/touxiang"
+            android:layout_gravity="center"
+            android:layout_width="140dp"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recycleview_myfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

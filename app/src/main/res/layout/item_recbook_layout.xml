@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linear_pubook_item"
+    android:background="@drawable/linear_layout"
+    >
+
+    <!--每一本书的显示布局-->
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorwhite"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="3dp">
+    <ImageView
+        android:id="@+id/iv_book_item"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_book"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_bookname_item"
+            android:text="阿弥陀佛么么哒"
+            android:textSize="20dp"
+            android:maxLength="20"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.example.kingwen.frescofragment.Views.CircleImageView
+            android:id="@+id/iv_photo_item"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/img_photo"
+            />
+
+        <TextView
+            android:id="@+id/tv_nickname_item"
+            android:layout_below="@+id/iv_photo_item"
+            android:text="大冰的死忠粉"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_author_item"
+            android:layout_below="@+id/tv_bookname_item"
+            android:text="大冰"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/tv_bookname_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_summary_item"
+            android:text="     不舍得读完的、暖心的、真实的江湖故事汇"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_author_item"
+            android:layout_alignLeft="@+id/tv_bookname_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_bookway_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="倾情赠送"
+            android:layout_below="@+id/tv_bookname_item"
+            android:layout_toRightOf="@id/tv_author_item"
+            android:layout_alignTop="@+id/tv_author_item"
+            android:layout_marginLeft="30dp"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>

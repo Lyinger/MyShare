@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <!-- 选项卡 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <!-- tab1 -->
+
+        <TextView
+            android:id="@+id/tab1_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="关注书籍"
+            android:textColor="@color/colorblack" />
+
+        <!-- tab2 -->
+
+        <TextView
+            android:id="@+id/tab2_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="关注作者"
+            android:textColor="@color/colorblack" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip"
+        android:src="@drawable/down_line" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
