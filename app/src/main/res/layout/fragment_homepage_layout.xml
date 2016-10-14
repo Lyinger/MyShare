@@ -22,7 +22,6 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:hint="书名/作者/发布者"
-            android:textAlignment="center"
             android:background="@color/colorwhite"
             />
 

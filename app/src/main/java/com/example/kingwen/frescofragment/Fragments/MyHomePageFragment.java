@@ -28,6 +28,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.kingwen.frescofragment.Activities.PubBookDetailActivity;
+import com.example.kingwen.frescofragment.Activities.SearchActivity;
 import com.example.kingwen.frescofragment.Activities.SearchResultActivity;
 import com.example.kingwen.frescofragment.Adapters.BookAdapter;
 import com.example.kingwen.frescofragment.Beans.PublishBook;
@@ -101,7 +102,7 @@ public class MyHomePageFragment extends Fragment implements View.OnClickListener
         publishadapter=new BookAdapter(context);
 
         initDatas();
-      /*  publishdata.add(Books.book_android);
+        publishdata.add(Books.book_android);
         publishdata.add(Books.book_bio_deng);
         publishdata.add(Books.book_journal_guojiadili);
         publishdata.add(Books.book_journal_lonely);
@@ -113,7 +114,7 @@ public class MyHomePageFragment extends Fragment implements View.OnClickListener
         publishdata.add(Books.book_life_bodylove);
         publishdata.add(Books.book_story_heyisheng);
         publishdata.add(Books.book_story_wanmei);
-        publishdata.add(Books.book_bio_fangao);*/
+        publishdata.add(Books.book_bio_fangao);
 
 
 
@@ -286,7 +287,7 @@ public class MyHomePageFragment extends Fragment implements View.OnClickListener
                     }
                 });
 
-         mQueue.add(stringRequest);
+//         mQueue.add(stringRequest);
 
     }
 
@@ -303,8 +304,8 @@ public class MyHomePageFragment extends Fragment implements View.OnClickListener
 
             //搜索界面
             case R.id.btn_search_homefragment:
-//                Intent intent=new Intent(context,SearchActivity.class);
-//                startActivity(intent);
+                Intent intent=new Intent(context,SearchActivity.class);
+                startActivity(intent);
                 break;
             //小说
             case R.id.btn_novel:
